@@ -1,0 +1,2 @@
+# Aphrodite
+Wordpress Aphrodite Template
