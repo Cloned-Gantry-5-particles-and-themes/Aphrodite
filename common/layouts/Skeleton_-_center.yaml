@@ -1,0 +1,378 @@
+version: 2
+preset:
+  image: gantry-admin://images/layouts/3-col.png
+  name: skeleton_-_center
+  timestamp: 1474265166
+layout:
+  /drawer/:
+    -
+      - 'system-messages-8489 100'
+  /top/: {  }
+  /header/:
+    -
+      - 'logo-2371 56'
+      - 'iconmenu-3709 44'
+  /navigation/:
+    -
+      - 'menu-4987 80'
+      - 'social-2827 20'
+  /showcase/: {  }
+  /feature/: {  }
+  /utility/: {  }
+  /breadcrumb/: {  }
+  /maintop/: {  }
+  /container/:
+    -
+      -
+        'sidebar-a 20': {  }
+      -
+        'content-top 60': {  }
+        'body 60': {  }
+        'content-bottom 60': {  }
+      -
+        'sidebar-b 20': {  }
+  /mainbottom/: {  }
+  /extension/: {  }
+  /bottom/: {  }
+  /footer/: {  }
+  /copyright/: {  }
+  offcanvas:
+    -
+      - 'mobile-menu-8694 100'
+structure:
+  drawer:
+    type: section
+    title: 'Drawer'
+    attributes:
+      id: g-drawer
+      class: ''
+      extra: {  }
+      boxed: ''
+  top:
+    type: section
+    title: 'Top'
+    attributes:
+      id: g-top
+      class: ''
+      extra: {  }
+      boxed: ''
+  header:
+    type: section
+    subtype: header
+    title: 'Header'
+    attributes:
+      id: g-header
+      class: ''
+      extra: {  }
+      boxed: ''
+  navigation:
+    type: section
+    title: 'Navigation'
+    attributes:
+      id: g-navigation
+      class: ''
+      extra: {  }
+      boxed: ''
+  showcase:
+    type: section
+    title: 'Showcase'
+    attributes:
+      id: g-showcase
+      class: ''
+      extra: {  }
+      boxed: ''
+  feature:
+    type: section
+    title: 'Feature'
+    attributes:
+      id: g-feature
+      class: ''
+      extra: {  }
+      boxed: ''
+  utility:
+    type: section
+    title: 'Utility'
+    attributes:
+      id: g-utility
+      class: ''
+      extra: {  }
+      boxed: ''
+  breadcrumb:
+    type: section
+    title: 'Breadcrumb'
+    attributes:
+      id: g-breadcrumb
+      class: ''
+      extra: {  }
+      boxed: ''
+  maintop:
+    type: section
+    title: 'Main Top'
+    attributes:
+      id: g-maintop
+      class: ''
+      extra: {  }
+      boxed: ''
+  container:
+    type: section
+    title: 'Container'
+    attributes:
+      id: g-main
+      class: ''
+      extra: {  }
+      boxed: ''
+  sidebar-a:
+    type: section
+    subtype: aside
+    title: 'Sidebar A'
+    attributes:
+      id: g-sidebar-a
+      class: ''
+      extra: {  }
+      boxed: ''
+    block:
+      id: ''
+      class: ''
+      variations: ''
+      fixed: ''
+      size: '20'
+  content-top:
+    type: section
+    subtype: main
+    title: 'Content Top'
+    attributes:
+      id: g-content-top
+      class: ''
+      extra: {  }
+      boxed: ''
+    block:
+      id: ''
+      class: ''
+      variations: ''
+      fixed: ''
+      size: '60'
+  body:
+    type: section
+    subtype: main
+    title: 'Content Body'
+    attributes:
+      id: g-body
+      class: ''
+      extra: {  }
+      boxed: ''
+    block:
+      id: ''
+      class: ''
+      variations: ''
+      fixed: ''
+      size: '60'
+  content-bottom:
+    type: section
+    subtype: main
+    title: 'Content Bottom'
+    attributes:
+      id: g-content-bottom
+      class: ''
+      extra: {  }
+      boxed: ''
+    block:
+      id: ''
+      class: ''
+      variations: ''
+      fixed: ''
+      size: '60'
+  sidebar-b:
+    type: section
+    subtype: aside
+    title: 'Sidebar B'
+    attributes:
+      id: g-sidebar-b
+      class: ''
+      extra: {  }
+      boxed: ''
+    block:
+      id: ''
+      class: ''
+      variations: ''
+      fixed: ''
+      size: '20'
+  mainbottom:
+    type: section
+    title: 'Main Bottom'
+    attributes:
+      id: g-mainbottom
+      class: ''
+      extra: {  }
+      boxed: ''
+  extension:
+    type: section
+    title: 'Extension'
+    attributes:
+      id: g-extension
+      class: ''
+      extra: {  }
+      boxed: ''
+  bottom:
+    type: section
+    title: 'Bottom'
+    attributes:
+      id: g-bottom
+      class: ''
+      extra: {  }
+      boxed: ''
+  footer:
+    type: section
+    title: 'Footer'
+    attributes:
+      id: g-footer
+      class: ''
+      extra: {  }
+      boxed: ''
+  copyright:
+    type: section
+    title: 'Copyright'
+    attributes:
+      id: g-copyright
+      class: ''
+      extra: {  }
+      boxed: ''
+  offcanvas:
+    type: offcanvas
+    attributes:
+      id: g-offcanvas
+      class: ''
+      extra: {  }
+      boxed: ''
+      position: g-offcanvas-left
+      swipe: 1
+      css3animation: 1
+content:
+  system-messages-8489:
+    type: system
+    subtype: messages
+    title: 'System Messages'
+    attributes:
+      enabled: true
+    block:
+      id: ''
+      class: ''
+      variations: ''
+      fixed: ''
+      size: '100'
+  logo-2371:
+    type: particle
+    subtype: logo
+    title: 'Logo / Image'
+    attributes:
+      enabled: true
+      url: ''
+      image: 'gantry-theme://images/logo/callisto.png'
+      link: true
+      svg: ''
+      text: 'Callisto'
+      class: 'g-logo'
+    block:
+      id: ''
+      class: g-logo-block
+      variations: ''
+      fixed: ''
+      size: '56'
+  iconmenu-3709:
+    type: particle
+    subtype: iconmenu
+    title: 'Icon Menu'
+    attributes:
+      enabled: true
+      class: ''
+      target: _parent
+      items:
+        -
+          icon: 'fa fa-comments'
+          text: 'Blog'
+          link: 'https://blog.dazzlesoftware.org'
+          name: Blog
+        -
+          icon: 'fa fa-book'
+          text: 'Codex'
+          link: 'https://codex.dazzlesoftware.org'
+          name: Codex
+        -
+          icon: 'fa fa-commenting'
+          text: 'Community'
+          link: 'https://community.dazzlesoftware.org'
+          name: Community
+        -
+          icon: 'fa fa-shopping-cart'
+          text: 'Marketplace'
+          link: 'https://marketplace.dazzlesoftware.org'
+          name: Marketplace
+    block:
+      id: ''
+      class: flush
+      variations: ''
+      fixed: ''
+      size: '44'
+  menu-4987:
+    type: particle
+    subtype: menu
+    title: Menu
+    attributes:
+      enabled: true
+      menu: ''
+      base: '/'
+      startLevel: 1
+      maxLevels: 0
+      renderTitles: 0
+      hoverExpand: 1
+      mobileTarget: 0
+    block:
+      id: ''
+      class: g-menu-block
+      variations: ''
+      fixed: ''
+      size: '80'
+  social-2827:
+    type: particle
+    subtype: social
+    title: Social
+    attributes:
+      enabled: true
+      css:
+        class: 'social-items'
+      title: ''
+      target: _blank
+      display: both
+      items:
+        -
+          icon: 'fa fa-twitter fa-fw'
+          text: ''
+          link: 'http://www.twitter.com/dazzlesoftware'
+          name: Twitter
+        -
+          icon: 'fa fa-facebook fa-fw'
+          text: ''
+          link: 'http://www.facebook.com/dazzlesoftware'
+          name: Facebook
+        -
+          icon: 'fa fa-google-plus fa-fw'
+          text: ''
+          link: 'https://plus.google.com/u/0/106840830150956948495'
+          name: Google+
+    block:
+      id: ''
+      class: ''
+      variations: ''
+      fixed: ''
+      size: '20'
+  mobile-menu-8694:
+    type: particle
+    subtype: mobile-menu
+    title: 'Mobile Menu'
+    attributes:
+      enabled: true
+    block:
+      id: ''
+      class: ''
+      variations: ''
+      fixed: ''
+      size: '100'

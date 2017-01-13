@@ -1,0 +1,29 @@
+.g-notification {
+	padding: 2rem;
+	&.g-notification-large {
+		padding: 5rem 2rem;
+	}
+	&.g-notification-medium {
+		padding: 3rem 2rem;
+	}
+	&.g-notification-small {
+		padding: 2rem;
+	}		
+	.g-notification-title {
+		margin: 0;
+		line-height: 3rem;
+	}
+	.g-notification-subtitle {
+		line-height: 2rem;
+		opacity: 0.8;
+	}
+	.button {
+		margin: 1rem 0 0.75rem 0;
+	}
+	& + .g-notification {
+		padding-top: 0rem;
+	}
+	.rounded {
+		border-radius: $core-border-radius;
+	}
+}

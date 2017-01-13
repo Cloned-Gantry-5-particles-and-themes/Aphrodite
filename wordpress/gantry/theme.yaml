@@ -1,0 +1,153 @@
+details:
+  name: Callisto
+  version: "1.3.6"
+  icon: paper-plane
+  date: September 13, 2016
+  author:
+    name: RocketTheme, LLC
+    email: support@rockettheme.com
+    link: http://www.rockettheme.com
+
+  documentation:
+    link: http://docs.gantry.org/gantry5
+
+  support:
+    link: https://gitter.im/gantry/gantry5
+
+  updates:
+    link: http://updates.rockettheme.com/themes/callisto.yaml
+
+  copyright: (C) 2007 - 2015 RocketTheme, LLC. All rights reserved.
+  license: GPLv2
+  description: Callisto Theme
+  images:
+    thumbnail: admin/images/preset1.png
+    preview: admin/images/preset1.png
+
+configuration:
+  gantry:
+    platform: wordpress
+    engine: nucleus
+
+  theme:
+    parent: rt_callisto
+    base: gantry-theme://common
+    file: gantry-theme://includes/theme.php
+    class: \Gantry\Framework\Theme
+    textdomain: g5_callisto
+
+  fonts:
+    sourcesanspro:
+      700: 'gantry-theme://fonts/sourcesanspro/sourcesanspro_bold/sourcesanspro-bold-webfont'
+      700italic: 'gantry-theme://fonts/sourcesanspro/sourcesanspro_bolditalic/sourcesanspro-bolditalic-webfont'
+      400italic: 'gantry-theme://fonts/sourcesanspro/sourcesanspro_italic/sourcesanspro-italic-webfont'
+      400: 'gantry-theme://fonts/sourcesanspro/sourcesanspro_regular/sourcesanspro-regular-webfont'
+    lato:
+      900: 'gantry-theme://fonts/lato/lato_black/lato-black-webfont'
+      700: 'gantry-theme://fonts/lato/lato_bold/lato-bold-webfont'
+
+  css:
+    compiler: \Gantry\Component\Stylesheet\ScssCompiler
+    target: gantry-theme://css-compiled
+    paths:
+      - gantry-theme://scss
+      - gantry-engine://scss
+    files:
+      - callisto
+      - callisto-wordpress
+      - custom
+    persistent:
+      - callisto
+    overrides:
+      - callisto-wordpress
+      - custom
+
+  block-variations:
+    Box Variations:
+      box1: Box 1
+      box2: Box 2
+      box3: Box 3
+      box4: Box 4
+      box-grey    : Box Grey
+      box-pink    : Box Pink
+      box-red     : Box Red
+      box-purple  : Box Purple
+      box-orange  : Box Orange
+      box-blue    : Box Blue
+    Effects:
+      shadow: Shadow 1
+      shadow2: Shadow 2
+      rounded: Rounded
+      square: Square
+    Utility:
+      equal-height: Equal Height
+      g-outer-box: Outer Box
+      disabled: Disabled
+      align-right: Align Right
+      align-left: Align Left
+      center: Center
+      nomarginall: No Margin
+      nopaddingall: No Padding
+      flush: Flush
+
+chrome:
+  gantry:
+    before_widget: <div id="%1$s" class="widget %2$s">
+    after_widget: </div>
+    before_title: <h3 class="widgettitle g-title">
+    after_title: </h3>
+
+admin:
+  styles:
+    core:
+      - base
+      - accent
+    section:
+      - header
+      - navigation
+      - showcase
+      - feature
+      - subfeature
+      - main
+      - footer
+    configuration:
+      - breakpoints
+  content:
+    general:
+      - wpautop
+    blog:
+      - query
+      - content
+      - heading
+      - featured-image
+      - title
+      - meta-date
+      - meta-author
+      - meta-comments
+      - meta-categories
+      - meta-tags
+      - read-more
+    single:
+      - featured-image
+      - title
+      - meta-date
+      - meta-author
+      - meta-comments
+      - meta-categories
+      - meta-tags
+    page:
+      - featured-image
+      - title
+      - meta-date
+      - meta-author
+    archive:
+      - content
+      - heading
+      - featured-image
+      - title
+      - meta-date
+      - meta-author
+      - meta-comments
+      - meta-categories
+      - meta-tags
+      - read-more

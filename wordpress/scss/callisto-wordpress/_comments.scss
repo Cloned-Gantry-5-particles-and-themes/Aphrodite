@@ -1,0 +1,44 @@
+#comments {
+    // Comments List
+    ol.commentlist {
+
+        // Single Comment
+        li.comment {
+
+            .comment-body {
+                background: rgba(0, 0, 0, 0.1);
+                border-radius: $core-border-radius;
+                overflow: hidden;
+            }
+
+            .comment-author {
+                line-height: 47px;
+                background-color: $header-background;
+                color: $header-text-color;
+
+                a {
+                    color: $header-text-color;
+                    &:hover {
+                        color: $white;
+                    }
+                }
+            }
+
+            &.bypostauthor {
+                > .comment-body {
+                    > .comment-author {
+                        background: $box3-background;
+                        color: $base-text-color;
+
+                        a {
+                            color: $base-text-color;
+                            &:hover {
+                                color: lighten($base-text-color, 15%);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
