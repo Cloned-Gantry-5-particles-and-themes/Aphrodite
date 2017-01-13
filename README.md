@@ -22,7 +22,7 @@ Gantry 5 Aphrodite Template
 ## MacOS
 
 ## Windows
-[Node is designed to build scalable network applications.](https://nodejs.org/en/download "Node.js")
+[Node.js](https://nodejs.org/en/download "Node is designed to build scalable network applications.")
 
 # Building
 
