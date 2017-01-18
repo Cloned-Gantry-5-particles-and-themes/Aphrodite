@@ -1,3 +1,6 @@
+Theme Forked from https://github.com/dazzle-gantry/Aphrodite
+
+
 # Aphrodite
 Gantry 5 Aphrodite Template
 
